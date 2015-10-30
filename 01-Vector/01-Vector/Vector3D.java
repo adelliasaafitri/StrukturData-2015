@@ -8,7 +8,7 @@
 public class Vector3D
 {
     // instance variables - replace the example below with your own
-    public double x,y,z;
+    private double x,y,z;
 
     /**
      * Constructor for objects of class Vector3D
@@ -18,6 +18,23 @@ public class Vector3D
         this.x = x;
         this.y = y;
         this.z = z;
+        
+        
     }
+    
+        public double getX(){
+          //this.x = x;
+          return x;
+        }
+        
+        public double getY(){
+        //this.y = y;
+        return y;
+        }
+        
+        public double getZ(){
+        //this.z = z;
+        return z;
+        }
 
 }
