@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=shift
+comment1.target=CaesarCipher(int)
+comment2.params=sumber\ sasaran
+comment2.target=void\ enkripsi(java.lang.String,\ java.lang.String)
+comment3.params=sumber\ sasaran
+comment3.target=void\ dekripsi(java.lang.String,\ java.lang.String)
+numComments=4
