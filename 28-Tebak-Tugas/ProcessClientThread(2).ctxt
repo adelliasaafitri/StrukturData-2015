@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=koneksiKiriman
+comment0.target=ProcessClientThread(java.net.Socket)
+comment1.params=
+comment1.target=void\ run()
+comment2.params=
+comment2.target=void\ prosesPermintaanClient()
+comment2.text=\ gak\ perlu\r\n\ \ \ \ private\ void\ prosesPermintaanClient(Socket\ koneksi)\ \r\n\ \ \ \ throws\ InterruptedException,\ IOException\ {\r\n\ \ \ \ String\ ip\ \=\ koneksi.getInetAddress().getHostAddress();\r\n\ \ \ \ System.out.println("Dari\:\ "\ +\ ip);\r\n\r\n\ \ \ \ //\ Ambil\ dan\ tampilkan\ masukan\r\n\ \ \ \ InputStream\ masukan\ \=\ koneksi.getInputStream();\r\n\ \ \ \ BufferedReader\ masukanReader\ \=\ new\ BufferedReader(new\ InputStreamReader(masukan));\ \r\n\ \ \ \ String\ baris\ \=\ masukanReader.readLine();\r\n\ \ \ \ System.out.println(baris);\r\n\r\n\ \ \ \ //\ Baca\ pesan\ dari\ keyboard\r\n\ \ \ \ Scanner\ keyboard\ \=\ new\ Scanner(System.in);\r\n\ \ \ \ System.out.print("Pesan\ kembali\:\ ");\r\n\ \ \ \ baris\ \=\ keyboard.nextLine();\r\n\r\n\ \ \ \ //\ Kirim\ ke\ client\r\n\ \ \ \ OutputStream\ keluaran\ \=\ koneksi.getOutputStream();\r\n\ \ \ \ BufferedWriter\ keluaranBuf\ \=\ new\ BufferedWriter(new\ OutputStreamWriter(keluaran));\ \r\n\ \ \ \ keluaranBuf.write(baris);\r\n\ \ \ \ keluaranBuf.newLine();\r\n\ \ \ \ keluaranBuf.flush();\r\n\r\n\ \ \ \ //\ Tunggu\ kirim\ balasan\ client\r\n\ \ \ \ masukanReader\ \=\ new\ BufferedReader(new\ InputStreamReader(masukan));\ \r\n\ \ \ \ baris\ \=\ masukanReader.readLine();\r\n\ \ \ \ System.out.println(baris);\r\n\ \ \ \ }\r\n
+numComments=3
